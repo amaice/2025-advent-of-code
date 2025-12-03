@@ -61,6 +61,12 @@ build CMakeFiles/1.dir/Safe.cpp.obj: CXX_COMPILER__1_unscanned_Debug C$:/Users/a
   OBJECT_DIR = CMakeFiles\1.dir
   OBJECT_FILE_DIR = CMakeFiles\1.dir
 
+build CMakeFiles/1.dir/NewSafe.cpp.obj: CXX_COMPILER__1_unscanned_Debug C$:/Users/amaic/Desktop/School/2025-advent-of-code/1/NewSafe.cpp || cmake_object_order_depends_target_1
+  DEP_FILE = CMakeFiles\1.dir\NewSafe.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\1.dir
+  OBJECT_FILE_DIR = CMakeFiles\1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1
@@ -69,7 +75,7 @@ build CMakeFiles/1.dir/Safe.cpp.obj: CXX_COMPILER__1_unscanned_Debug C$:/Users/a
 #############################################
 # Link the executable 1.exe
 
-build 1.exe: CXX_EXECUTABLE_LINKER__1_Debug CMakeFiles/1.dir/main.cpp.obj CMakeFiles/1.dir/Safe.cpp.obj
+build 1.exe: CXX_EXECUTABLE_LINKER__1_Debug CMakeFiles/1.dir/main.cpp.obj CMakeFiles/1.dir/Safe.cpp.obj CMakeFiles/1.dir/NewSafe.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1.dir

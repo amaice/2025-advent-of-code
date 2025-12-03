@@ -2,13 +2,24 @@
 #include <fstream>
 
 #include "Safe.h"
+#include "NewSafe.h"
 
 int main()
 {
-    const std::string filePath = "input.txt";
+    const std::string filePath = "input_stolen.txt";
     std::ifstream inputFile(filePath);
 
-    Safe safe = Safe();
+    NewSafe safe = NewSafe();
+    // safe.turn('L', 68);
+    // safe.turn('L', 30);
+    // safe.turn('R', 48);
+    // safe.turn('L', 5);
+    // safe.turn('R', 60);
+    // safe.turn('L', 55);
+    // safe.turn('L', 1);
+    // safe.turn('L', 99);
+    // safe.turn('R', 14);
+    // safe.turn('L', 82);
 
     std::string line;
     while (getline(inputFile, line))
@@ -20,7 +31,7 @@ int main()
     }
     inputFile.close();
 
-    std::cout << safe.password() << std::endl;
-
+    std::cout << "Password: " << safe.password() << std::endl;
+    std::cout << "Answer is 6122";
     return 0;
 }

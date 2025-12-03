@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(1 main.cpp
         Safe.cpp
-        Safe.h)
+        Safe.h
+        NewSafe.h
+        NewSafe.cpp)
