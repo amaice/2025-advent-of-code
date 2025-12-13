@@ -25,13 +25,17 @@ int main() {
     }
 
     int num_accessible = 0;
-    for (int y = 0; y < printing_department.size(); y++) {
-        for (int x = 0; x < printing_department[x].size(); x++) {
-            if (printing_department[y][x]
-            && num_of_adjacent_rolls(printing_department, y, x) < 4) {
-                num_accessible++;
-                //std::cout << x << "," << y << std::endl;
-
+    bool no_more_accessible = false;
+    while (!no_more_accessible) {
+        no_more_accessible = true;
+        for (int y = 0; y < printing_department.size(); y++) {
+            for (int x = 0; x < printing_department[x].size(); x++) {
+                if (printing_department[y][x]
+                && num_of_adjacent_rolls(printing_department, y, x) < 4) {
+                    num_accessible++;
+                    printing_department[y][x] = false;
+                    no_more_accessible = false;
+                }
             }
         }
     }
